@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SK HOTEL INN - Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>SK HOTEL INN</h1>
+    <nav>
+      <a href="#" id="wifi-btn">Wi-Fi</a>
+      <a href="https://hotelskinn.in/">Services</a>
+      <a href="tel:8552982999">Call Us</a>
+    </nav>
+  </header>
+
+  <!-- Wi-Fi Sidebar -->
+  <!-- Wi-Fi Sidebar -->
+  <div id="wifi-sidebar">
+    <div class="wifi-content">
+      <span class="close-btn" id="close-sidebar">&times;</span>
+      <h2>Wi-Fi Access</h2>
+      <p><strong>Wi-Fi Name:</strong> SK_HOTEL_INN</p>
+      <p>
+        <strong>Password:</strong> <span id="wifi-password">Nashik@9999</span>
+        <button id="copy-btn">Copy</button> <!-- 👈 Added copy button -->
+      </p>
+      <p id="copy-msg" style="color:green; display:none;">Copied to clipboard!</p> <!-- optional success message -->
+    </div>
+  </div>
+
+
+  <!-- Tea/Cofee -->
+  <section>
+    <h2>Tea/Coffee</h2>
+    <p class="menu-time">Available from 07:00 AM</p>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Tea</h3>
+        <p>Refreshing hot tea brewed with premium leaves</p>
+        <span>₹20</span>
+      </div>
+
+      <div class="item">
+        <h3>Black Tea</h3>
+        <p>Strong and bold black tea with no milk</p>
+        <span>₹15</span>
+      </div>
+
+      <div class="item">
+        <h3>Coffee</h3>
+        <p>Rich and aromatic filter coffee</p>
+        <span>₹30</span>
+      </div>
+
+      <div class="item">
+        <h3>Black Coffee</h3>
+        <p>Pure, bold black coffee for a strong kick</p>
+        <span>₹20</span>
+      </div>
+
+      <div class="item">
+        <h3>Green Tea</h3>
+        <p>Pure, green tea for a strong kick</p>
+        <span>₹20</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Breakfast -->
+  <section>
+    <h2>Breakfast</h2>
+    <p class="menu-time">Available from 07:00 AM</p>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Poha</h3>
+        <p>Light and fluffy flattened rice cooked with spices and herbs</p>
+        <span>₹50</span>
+      </div>
+
+      <div class="item">
+        <h3>Upma</h3>
+        <p>Traditional South Indian dish made with roasted semolina and vegetables</p>
+        <span>₹50</span>
+      </div>
+
+      <div class="item">
+        <h3>Veg Sandwich</h3>
+        <p>Fresh vegetables layered with chutney and served toasted</p>
+        <span>₹70</span>
+      </div>
+
+      <div class="item">
+        <h3>Cheese Sandwich</h3>
+        <p>Grilled sandwich stuffed with melted cheese</p>
+        <span>₹120</span>
+      </div>
+
+      <div class="item">
+        <h3>Butter toast</h3>
+        <p>Classic toasted bread served with creamy butter</p>
+        <span>₹35</span>
+      </div>
+
+      <div class="item">
+        <h3>Bread Jam</h3>
+        <p>Soft bread slices with sweet fruit jam spread</p>
+        <span>₹30</span>
+      </div>
+
+      <div class="item">
+        <h3>Finger Chips</h3>
+        <p>Crispy golden fried potato fries served with ketchup</p>
+        <span>₹90</span>
+      </div>
+
+      <div class="item">
+        <h3>Butter Slice</h3>
+        <p>Toasted bread generously layered with creamy butter</p>
+        <span>₹20</span>
+      </div>
+
+      <div class="item">
+        <h3>Mix Paratha</h3>
+        <p>Whole wheat paratha stuffed with assorted vegetables</p>
+        <span>₹100</span>
+      </div>
+
+      <div class="item">
+        <h3>Cheese Paratha</h3>
+        <p>Paratha filled with gooey melted cheese, served hot</p>
+        <span>₹120</span>
+      </div>
+
+      <div class="item">
+        <h3>Poori Bhaji</h3>
+        <p>Fluffy fried bread with mildly spiced potato curry</p>
+        <span>₹78</span>
+      </div>
+
+      <div class="item">
+        <h3>Idli Sambhar</h3>
+        <p>Steamed rice cakes served with sambhar and chutney</p>
+        <span>₹55</span>
+      </div>
+
+      <div class="item">
+        <h3>Medu Vada Sambhar</h3>
+        <p>Crispy fried lentil doughnuts served with sambhar & chutney</p>
+        <span>₹60</span>
+      </div>
+
+      <div class="item">
+        <h3>Aloo Paratha</h3>
+        <p>Stuffed bread with butter & curd</p>
+        <span>₹80</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Lunch -->
+  <section>
+    <h2>Lunch</h2>
+    <p class="menu-time">Available from 11:00 AM to 03:45 PM</p>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Paneer Masala</h3>
+        <p>Cottage cheese cooked in rich tomato-onion gravy with aromatic spices</p>
+        <span>₹160</span>
+      </div>
+
+
+      <div class="item">
+        <h3>Veg Kolhapuri</h3>
+        <p>Spicy and flavorful mixed vegetables in a traditional Kolhapuri masala</p>
+        <span>₹140</span>
+      </div>
+
+      <div class="item">
+        <h3>Mix Veg</h3>
+        <p>A wholesome curry with a mix of seasonal vegetables in mild spices</p>
+        <span>₹130</span>
+      </div>
+
+      <div class="item">
+        <h3>Paneer Butter Masala</h3>
+        <p>Cottage cheese cubes cooked in rich buttery tomato gravy</p>
+        <span>₹175</span>
+      </div>
+
+      <div class="item">
+        <h3>Shev Bhaji</h3>
+        <p>Spicy curry made with crispy shev, a true Maharashtrian delight</p>
+        <span>₹130</span>
+      </div>
+
+      <div class="item">
+        <h3>Dal Fry</h3>
+        <p>Yellow lentils fried with onion, tomato, ghee, and Indian spices</p>
+        <span>₹120</span>
+      </div>
+
+      <div class="item">
+        <h3>Dal Tadka</h3>
+        <p>Yellow lentils tempered with ghee, garlic, and Indian spices</p>
+        <span>₹130</span>
+      </div>
+
+      <div class="item">
+        <h3>Dal Khichdi</h3>
+        <p>Comforting mix of rice and lentils, mildly spiced & ghee tempered</p>
+        <span>₹120</span>
+      </div>
+
+      <div class="item">
+        <h3>Fulka (2 pcs)</h3>
+        <p>Soft, fluffy, small wheat rotis — light and healthy, served hot</p>
+        <span>₹20</span>
+      </div>
+
+      <div class="item">
+        <h3>Veg Pulav</h3>
+        <p>Fragrant basmati rice cooked with vegetables and mild spices</p>
+        <span>₹130</span>
+      </div>
+
+      <div class="item">
+        <h3>Veg Biryani</h3>
+        <p>Layered rice dish with vegetables, saffron, and aromatic spices</p>
+        <span>₹150</span>
+      </div>
+
+      <div class="item">
+        <h3>Steam Rice</h3>
+        <p>Steamed plain rice served fresh and fluffy</p>
+        <span>₹90</span>
+      </div>
+
+      <div class="item">
+        <h3>Jeera Rice</h3>
+        <p>Steamed rice tempered with cumin seeds and ghee</p>
+        <span>₹110</span>
+      </div>
+
+      <div class="item">
+        <h3>Veg Thali</h3>
+        <p>Includes salad, chutney, papad, 4 types of sabji, 5 fulka, 2 types of dal,
+          2 types of rice, and a sweet dish</p>
+        <span>₹250</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dinner -->
+  <section>
+    <h2>Dinner</h2>
+    <p class="menu-time">Available from 07:00 PM to 10:30 PM</p>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Paneer Masala</h3>
+        <p>Cottage cheese cooked in rich tomato-onion gravy with aromatic spices</p>
+        <span>₹160</span>
+      </div>
+
+
+      <div class="item">
+        <h3>Veg Kolhapuri</h3>
+        <p>Spicy and flavorful mixed vegetables in a traditional Kolhapuri masala</p>
+        <span>₹140</span>
+      </div>
+
+      <div class="item">
+        <h3>Mix Veg</h3>
+        <p>A wholesome curry with a mix of seasonal vegetables in mild spices</p>
+        <span>₹130</span>
+      </div>
+
+      <div class="item">
+        <h3>Paneer Butter Masala</h3>
+        <p>Cottage cheese cubes cooked in rich buttery tomato gravy</p>
+        <span>₹175</span>
+      </div>
+
+      <div class="item">
+        <h3>Shev Bhaji</h3>
+        <p>Spicy curry made with crispy shev, a true Maharashtrian delight</p>
+        <span>₹130</span>
+      </div>
+
+      <div class="item">
+        <h3>Dal Fry</h3>
+        <p>Yellow lentils fried with onion, tomato, ghee, and Indian spices</p>
+        <span>₹120</span>
+      </div>
+
+      <div class="item">
+        <h3>Dal Tadka</h3>
+        <p>Yellow lentils tempered with ghee, garlic, and Indian spices</p>
+        <span>₹130</span>
+      </div>
+
+      <div class="item">
+        <h3>Dal Khichdi</h3>
+        <p>Comforting mix of rice and lentils, mildly spiced & ghee tempered</p>
+        <span>₹120</span>
+      </div>
+
+      <div class="item">
+        <h3>Fulka (2 pcs)</h3>
+        <p>Soft, fluffy, small wheat rotis — light and healthy, served hot</p>
+        <span>₹20</span>
+      </div>
+
+      <div class="item">
+        <h3>Veg Pulav</h3>
+        <p>Fragrant basmati rice cooked with vegetables and mild spices</p>
+        <span>₹130</span>
+      </div>
+
+      <div class="item">
+        <h3>Veg Biryani</h3>
+        <p>Layered rice dish with vegetables, saffron, and aromatic spices</p>
+        <span>₹150</span>
+      </div>
+
+      <div class="item">
+        <h3>Steam Rice</h3>
+        <p>Steamed plain rice served fresh and fluffy</p>
+        <span>₹90</span>
+      </div>
+
+      <div class="item">
+        <h3>Jeera Rice</h3>
+        <p>Steamed rice tempered with cumin seeds and ghee</p>
+        <span>₹110</span>
+      </div>
+
+      <div class="item">
+        <h3>Veg Thali</h3>
+        <p>Includes salad, chutney, papad, 4 types of sabji, 5 fulka, 2 types of dal,
+          2 types of rice, and a sweet dish</p>
+        <span>₹250</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>©SK HOTEL INN | MAHARANA THAL</p>
+     <p>aswin nagar pathardi phata nashik maharastra - 422109</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
