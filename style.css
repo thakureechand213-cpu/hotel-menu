@@ -84,7 +84,7 @@ section {
 
 section h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #ffd700;
   border-left: 5px solid #e67e22;
   padding-left: 12px;
@@ -129,6 +129,31 @@ section h2 {
   color: #eee;
   opacity: 0.9;
 }
+/* Facilities row */
+.facilities {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.facilities span {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #ffd700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease;
+}
+
+.facilities span:hover {
+  transform: scale(1.08);
+}
+
 
 
 /* Menu Items Grid */
