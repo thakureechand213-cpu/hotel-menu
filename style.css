@@ -107,7 +107,7 @@ section h2 {
 
 /* Welcome Banner (redesigned, compact) */
 .welcome-banner {
-  margin-top: 80px; /* just below navbar */
+  margin-top: 95px; /* just below navbar */
   padding: 1.2rem 1rem;
   text-align: center;
   background: linear-gradient(135deg, #1a2a3a, #0f2027);
