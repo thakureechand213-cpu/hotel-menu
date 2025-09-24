@@ -6,18 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SK HOTEL INN - Menu</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
   <!-- Navbar -->
   <header>
-    <h1>SK HOTEL INN</h1>
+    <div class="logo-container">
+    <img src="hotel-logo.jpg" alt="Hotel SK INN Logo" class="logo">
+    <h1>HOTEL SK INN</h1>
+  </div>
     <nav>
       <a href="#" id="wifi-btn">Wi-Fi</a>
       <a href="https://hotelskinn.in/">Services</a>
       <a href="tel:8552982999">Call Us</a>
+      <a href="#" id="review-btn">Review Us</a>
     </nav>
   </header>
+  <section class="welcome-banner">
+  <h2>Welcome to HOTEL SK INN</h2>
+  <p>Your comfort, our priority ✨</p>
+</section>
 
   <!-- Wi-Fi Sidebar -->
   <!-- Wi-Fi Sidebar -->
@@ -33,6 +43,27 @@
       <p id="copy-msg" style="color:green; display:none;">Copied to clipboard!</p> <!-- optional success message -->
     </div>
   </div>
+
+  <!-- Review Us Modal -->
+<div id="review-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="close-modal">&times;</span>
+    <div class="review-links">
+      <a href="https://g.page/r/CcHIicWrjf0EEAE/review" target="_blank">
+        <i class="fab fa-google"></i> Google
+      </a>
+      <a href="https://www.instagram.com/hotel_sk_inn/#" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.facebook.com/hotelskinnnashik" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  
 
 
   <!-- Tea/Cofee -->

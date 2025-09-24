@@ -90,6 +90,47 @@ section h2 {
   padding-left: 12px;
 }
 
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffd700;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  margin-top: 80px; /* space below fixed navbar */
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #ffd70022, #e67e2215);
+  border-radius: 12px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.welcome-banner h2 {
+  font-size: 2.2rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-banner p {
+  font-size: 1.1rem;
+  color: #eee;
+  opacity: 0.9;
+}
+
+
 /* Menu Items Grid */
 .menu-items {
   display: grid;
@@ -270,4 +311,66 @@ footer {
   /* slightly closer to heading */
   margin-bottom: 15px;
   font-style: italic;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 320px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.review-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.review-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0f2027;
+  transition: transform 0.2s ease;
+}
+
+.review-links a:hover {
+  transform: scale(1.05);
+}
+
+.review-links a .fab {
+  font-size: 20px;
+}
+
+/* Brand colors */
+.review-links a[href*="google"] {
+  background: #DB4437;
+}
+.review-links a[href*="instagram"] {
+  background: #E1306C;
+}
+.review-links a[href*="facebook"] {
+  background: #1877F2;
 }
