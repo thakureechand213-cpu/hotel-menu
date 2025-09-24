@@ -105,62 +105,75 @@ section h2 {
   border: 2px solid #ffd700;
 }
 
-/* Welcome Banner */
-/* Welcome Banner (compact version) */
+/* Welcome Banner (redesigned, compact) */
 .welcome-banner {
-  margin-top: 80px; /* still below fixed navbar */
-  padding: 1.5rem 1rem; /* reduced padding */
+  margin-top: 80px; /* just below navbar */
+  padding: 1.2rem 1rem;
   text-align: center;
-  background: linear-gradient(135deg, #ffd70022, #e67e2215);
-  border-radius: 12px;
-  max-width: 900px; /* slightly narrower */
+  background: linear-gradient(135deg, #1a2a3a, #0f2027);
+  border-radius: 10px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px; /* reduced gap before menu */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
   animation: fadeIn 1.2s ease forwards;
 }
 
 .welcome-banner h2 {
-  font-size: 1.8rem; /* reduced size */
+  font-size: 1.6rem;
   color: #ffd700;
   margin-bottom: 0.3rem;
 }
 
 .welcome-banner p {
-  font-size: 1rem;
-  color: #eee;
-  opacity: 0.9;
-  margin-bottom: 0.8rem; /* less gap */
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
 }
 
-/* Facilities row */
+/* Facilities (redesigned pills) */
 .facilities {
-  font-size: 0.95rem;
-  color: #ffd700;
   display: flex;
-  gap: 12px;
+  gap: 10px;
   justify-content: center;
-  flex-wrap: wrap; /* default for desktop */
+  flex-wrap: wrap;
+  font-size: 0.9rem;
   margin-top: 0.5rem;
 }
 
-/* On small screens → horizontal scroll */
+.facilities span {
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: transform 0.2s ease, background 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.facilities span:hover {
+  transform: scale(1.05);
+  background: rgba(255, 215, 0, 0.2);
+}
+
+/* Mobile scroll */
 @media (max-width: 768px) {
   .facilities {
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: flex-start;
     padding-bottom: 6px;
-    scrollbar-width: none; /* hide scrollbar (Firefox) */
+    scrollbar-width: none;
   }
-
   .facilities::-webkit-scrollbar {
-    display: none; /* hide scrollbar (Chrome/Safari) */
+    display: none;
   }
-
   .facilities span {
-    flex: 0 0 auto; /* prevent shrinking */
+    flex: 0 0 auto;
   }
 }
+
 
 
 
