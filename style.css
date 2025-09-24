@@ -106,53 +106,63 @@ section h2 {
 }
 
 /* Welcome Banner */
+/* Welcome Banner (compact version) */
 .welcome-banner {
-  margin-top: 80px; /* space below fixed navbar */
-  padding: 3rem 1.5rem;
+  margin-top: 80px; /* still below fixed navbar */
+  padding: 1.5rem 1rem; /* reduced padding */
   text-align: center;
   background: linear-gradient(135deg, #ffd70022, #e67e2215);
   border-radius: 12px;
-  max-width: 1100px;
+  max-width: 900px; /* slightly narrower */
   margin-left: auto;
   margin-right: auto;
-  animation: fadeIn 1.5s ease forwards;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .welcome-banner h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem; /* reduced size */
   color: #ffd700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .welcome-banner p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #eee;
   opacity: 0.9;
+  margin-bottom: 0.8rem; /* less gap */
 }
+
 /* Facilities row */
 .facilities {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.facilities span {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #ffd700;
   display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: transform 0.2s ease;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap; /* default for desktop */
+  margin-top: 0.5rem;
 }
 
-.facilities span:hover {
-  transform: scale(1.08);
+/* On small screens → horizontal scroll */
+@media (max-width: 768px) {
+  .facilities {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 6px;
+    scrollbar-width: none; /* hide scrollbar (Firefox) */
+  }
+
+  .facilities::-webkit-scrollbar {
+    display: none; /* hide scrollbar (Chrome/Safari) */
+  }
+
+  .facilities span {
+    flex: 0 0 auto; /* prevent shrinking */
+  }
 }
+
+
 
 
 
